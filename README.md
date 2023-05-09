@@ -10,3 +10,7 @@
 [ ] 영상 클릭 시 상세 페이지 보여주기
 [ ] 라우팅 적용
 [ ] 반응형 적용
+
+## 사용한 API
+
+[Youtube Api](https://developers.google.com/youtube?hl=ko)
