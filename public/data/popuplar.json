@@ -1,0 +1,182 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "lorS-eJ2i3jwHrCRq2blj73bKfs",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "KR",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "7GyIIOe_gZVbyTvMG4D0hcusxgk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "mgbZunbhsX0"
+            },
+            "snippet": {
+                "publishedAt": "2018-08-15T15:45:01Z",
+                "channelId": "UCBVjMGOIkavEAhyqpxJ73Dw",
+                "title": "Charlie Puth - Perfect Pitch",
+                "description": "Charlie Puth explains how sound and music are an essential part of how he experiences the world. Available with YouTube ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mgbZunbhsX0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mgbZunbhsX0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mgbZunbhsX0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Maroon 5",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-08-15T15:45:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "UL_XiIAlbiEOBSdQRk1ozskdAek",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "hmasHE4g2wc"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-29T15:00:17Z",
+                "channelId": "UCpWl2nwLDQQI4TTa1kJgxrg",
+                "title": "How to Prevent and Treat Puppy Separation Anxiety | Chewtorials",
+                "description": "When you bring a new puppy home, they quickly form a bond with you that's virtually unbreakable. But when you have to leave ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/hmasHE4g2wc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/hmasHE4g2wc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/hmasHE4g2wc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Chewy",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-29T15:00:17Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "JicQJAWKwx9w98oZRyYE-0nx1VA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "_j3aU9dWb14"
+            },
+            "snippet": {
+                "publishedAt": "2023-04-19T10:11:53Z",
+                "channelId": "UCaxVE9ogO7lp6XhusQGPPUA",
+                "title": "Как незрячие исправляют ошибки ? #студент #незрячие #дефектолог",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_j3aU9dWb14/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_j3aU9dWb14/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_j3aU9dWb14/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Valero pod balero",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-04-19T10:11:53Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "CdL1dhRTyVDkqledOaQ2QPcHZ5k",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "sbJYfReMq-o"
+            },
+            "snippet": {
+                "publishedAt": "2018-06-06T16:02:18Z",
+                "channelId": "UCgLQkRAZsFN6fhqxFyx8qhQ",
+                "title": "Impulse - Ep 7 &quot;He Said, She Said&quot;",
+                "description": "After Henry and Clay have a fight, Cleo tries to make amends by inviting the Boones over for dinner. But the evening takes a ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/sbJYfReMq-o/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/sbJYfReMq-o/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/sbJYfReMq-o/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Impulse",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-06-06T16:02:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "8kgUrwRKkI9H_vni-X5VLBquels",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "rDPiWpN2LiY"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-26T10:00:21Z",
+                "channelId": "UCP1CQH2PVJv4-glNTuVJl3g",
+                "title": "대형견이 간식을 먹는데 고양이가 다가오자...",
+                "description": "MilkyBokiTan#밀키복이탄이#shorts 시청해주셔서 감사합니다! -번역 / subs 영어 / English : Sarah Lee 스페인어 / Spanish : amigo ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/rDPiWpN2LiY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/rDPiWpN2LiY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/rDPiWpN2LiY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "밀키복이탄이MilkyBokiTan",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-26T10:00:21Z"
+            }
+        }
+    ]
+}

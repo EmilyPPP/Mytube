@@ -8,6 +8,7 @@ export default function Gnb() {
   return (
     <div className={styles.container}>
       <button className={styles.mainButton} onClick={IconClickHandler}>
+        {/* TODO: Link to Home */}
         <BsYoutube className={styles.icon} />
         Mytube
       </button>
