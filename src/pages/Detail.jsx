@@ -3,7 +3,7 @@ import VideoDetail from '../components/VideoDetail/VideoDetail';
 import { useParams } from 'react-router-dom';
 
 export default function Detail() {
-  const { videoId } = useParams();
+  const { id } = useParams();
 
-  return <VideoDetail Id={videoId} />;
+  return <VideoDetail Id={id} />;
 }
