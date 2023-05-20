@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 
 export default function Videos() {
   const { keyword } = useParams();
-  console.log(keyword);
 
-  return <VideoList Keyword={keyword} />;
+  return <VideoList keyword={keyword} />;
 }

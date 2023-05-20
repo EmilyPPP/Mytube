@@ -1,25 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
-import styles from './Gnb.module.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Gnb() {
-  const IconClickHandler = () => {};
+  const [keyword, setKeyword] = useState('');
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setKeyword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/videos/search/${keyword}`);
+  };
+
+  const initKeyword = () => {
+    setKeyword('');
+  };
 
   return (
-    <div className={styles.container}>
-      <button className={styles.mainButton} onClick={IconClickHandler}>
-        {/* TODO: Link to Home */}
-        <BsYoutube className={styles.icon} />
-        Mytube
-      </button>
+    <div className='flex  p-2 border-b border-b-gray-500'>
+      <Link to='/' onClick={initKeyword} className='flex'>
+        <BsYoutube className='text-red-500 text-3xl' />
+        <h1 className='text-2xl font-bold ml-2'>MYTUBE</h1>
+      </Link>
 
-      <form className={styles.searchForm}>
+      <form
+        className='m-auto w-2/4 flex justify-center'
+        onSubmit={handleSubmit}
+      >
         <input
-          className={styles.searchInput}
+          className='w-full bg-black p-1 border-none outline-none'
           type='text'
+          value={keyword}
           placeholder='Search...'
+          onChange={handleChange}
         />
-        <button className={styles.searchButton}>
+        <button className='bg-gray-700 w-8 y-8 flex justify-center items-center'>
           <BsSearch />
         </button>
       </form>
