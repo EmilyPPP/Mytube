@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-bg: #18181b;
-  --color-text: white;
-  --color-icon: red;
-  --color-gray: rgb(100, 100, 100);
-  --color-dg: rgb(63, 63, 63);
-  --color-black: black;
-}
-
-html.white {
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,10 +9,12 @@ body {
     sans-serif;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  color: var(--color-text);
-  background: var(--color-bg);
+  @apply flex flex-col items-center;
+  @apply bg-zinc-900 text-gray-50;
+}
+
+#root {
+  @apply w-full max-w-screen-2xl;
 }
 
 li {

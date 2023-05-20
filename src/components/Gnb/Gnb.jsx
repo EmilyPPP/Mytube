@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export default function Gnb() {
+  const params = useParams();
   const [keyword, setKeyword] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setKeyword(params.keyword || '');
+  }, [params.keyword]);
 
   const handleChange = (e) => {
     setKeyword(e.target.value);
@@ -20,27 +25,24 @@ export default function Gnb() {
   };
 
   return (
-    <div className='flex  p-2 border-b border-b-gray-500'>
-      <Link to='/' onClick={initKeyword} className='flex'>
-        <BsYoutube className='text-red-500 text-3xl' />
+    <header className='flex p-2 border-b border-gray-500 mb-4'>
+      <Link to='/' onClick={initKeyword} className='flex items-center'>
+        <BsYoutube className='text-brand text-3xl' />
         <h1 className='text-2xl font-bold ml-2'>MYTUBE</h1>
       </Link>
 
-      <form
-        className='m-auto w-2/4 flex justify-center'
-        onSubmit={handleSubmit}
-      >
+      <form className='w-full flex justify-center' onSubmit={handleSubmit}>
         <input
-          className='w-full bg-black p-1 border-none outline-none'
+          className='w-3/4 bg-black p-1 border-none outline-none text-gray-50'
           type='text'
           value={keyword}
           placeholder='Search...'
           onChange={handleChange}
         />
-        <button className='bg-gray-700 w-8 y-8 flex justify-center items-center'>
+        <button className='bg-gray-700 p-2'>
           <BsSearch />
         </button>
       </form>
-    </div>
+    </header>
   );
 }
