@@ -3,7 +3,7 @@ import VideoCard from '../components/VideoCard/VideoCard';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { v4 as uuidv4 } from 'uuid';
-import axios from 'axios';
+import FakeYoutube from '../apis/fakeYoutube';
 
 export default function Videos() {
   const { keyword } = useParams();
@@ -11,14 +11,10 @@ export default function Videos() {
     isLoading,
     error,
     data: videos,
-  } = useQuery(
-    ['videos', keyword],
-    async () => {
-      const uri = `/data/${keyword ? 'search' : 'popuplar'}.json`;
-      return axios.get(uri).then((res) => res.data.items);
-    },
-    { staleTime: 5000, refetchOnWindowFocus: false, refetchOnMount: false }
-  );
+  } = useQuery(['videos', keyword], () => {
+    const youtube = new FakeYoutube();
+    return youtube.search(keyword);
+  });
 
   return (
     <>
