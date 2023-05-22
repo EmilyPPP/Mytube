@@ -2,8 +2,8 @@ import React from 'react';
 import VideoCard from '../components/VideoCard/VideoCard';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { v4 as uuidv4 } from 'uuid';
 import FakeYoutube from '../apis/fakeYoutube';
+import Youtube from '../apis/youtube';
 
 export default function Videos() {
   const { keyword } = useParams();
@@ -12,7 +12,7 @@ export default function Videos() {
     error,
     data: videos,
   } = useQuery(['videos', keyword], () => {
-    const youtube = new FakeYoutube();
+    const youtube = new Youtube();
     return youtube.search(keyword);
   });
 
@@ -24,7 +24,7 @@ export default function Videos() {
       {videos && (
         <ul>
           {videos.map((video) => (
-            <VideoCard key={uuidv4()} video={video} />
+            <VideoCard key={video.id} video={video} />
           ))}
         </ul>
       )}

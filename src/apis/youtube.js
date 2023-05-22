@@ -1,9 +1,54 @@
 import axios from 'axios';
 
-const baseURI = 'public/data'; //'https://www.googleapis.com/youtube/v3';
-const Key = 'AIzaSyBoRWp7hT6G0Zxkn-uADSCkk9ulOcD60o0';
+export default class Youtube {
+  constructor() {
+    this.httpClient = axios.create({
+      baseURL: 'https://www.googleapis.com/youtube/v3',
+      params: { key: process.env.REACT_APP_YOUTUBE_API_KEY },
+    });
+  }
 
-export async function search(keyword) {
-  const uri = `/data/${keyword ? 'search' : 'popular'}.json`;
-  return axios.get(uri).then((res) => res.data.items);
+  async relatedVideoId(videoId) {
+    return this.httpClient.get('search', {
+      params: {
+        part: 'snippet',
+        relatedToVideoId: videoId,
+        type: 'video',
+        maxResults: 25,
+      },
+    });
+  }
+
+  async channels(channelId) {
+    return axios.get(`/data/channels.json`);
+  }
+
+  async search(keyword) {
+    return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
+  }
+
+  async #searchByKeyword(keyword) {
+    return this.httpClient
+      .get('search', {
+        params: {
+          part: 'snippet',
+          maxResults: 25,
+          q: keyword,
+        },
+      })
+      .then((res) => res.data.items)
+      .then((items) => items.map((item) => ({ ...item, id: item.id.videoId })));
+  }
+
+  async #mostPopular() {
+    return this.httpClient
+      .get('videos', {
+        params: {
+          part: 'snippet',
+          maxResults: 25,
+          chart: 'mostPopular',
+        },
+      })
+      .then((res) => res.data.items);
+  }
 }

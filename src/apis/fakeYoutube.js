@@ -14,7 +14,10 @@ export default class FakeYoutube {
   }
 
   async #searchByKeyword(keyword) {
-    return axios.get(`/data/search.json`).then((res) => res.data.items);
+    return axios
+      .get(`/data/search.json`)
+      .then((res) => res.data.items)
+      .then((items) => items.map((item) => ({ ...item, id: item.id.videoId })));
   }
 
   async #mostPopular() {
