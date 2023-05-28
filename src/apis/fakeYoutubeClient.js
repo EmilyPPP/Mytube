@@ -14,4 +14,8 @@ export default class FakeYoutubeClient {
   async videos(params) {
     return axios.get(`/data/popular.json`);
   }
+
+  async comments(params) {
+    return axios.get(`/data/comment.json`);
+  }
 }

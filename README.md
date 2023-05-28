@@ -16,6 +16,7 @@ React Tailwind Javascript
 - [x] 반응형 적용
 - [x] Not Found 페이지 만들기
 - [x] 다크모드/화이트모드 적용
+- [x] 댓글 추가
 
 </br>
 

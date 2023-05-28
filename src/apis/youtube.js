@@ -29,6 +29,17 @@ export default class Youtube {
       .then((res) => res.data.items[0].snippet.thumbnails.default.url);
   }
 
+  async comments(videoId) {
+    return this.apiClient
+      .comments({
+        params: {
+          part: 'snippet',
+          videoId,
+        },
+      })
+      .then((res) => res.data.items);
+  }
+
   async search(keyword) {
     return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
   }
@@ -38,8 +49,8 @@ export default class Youtube {
       .search({
         params: {
           part: 'snippet',
-          maxResults: 25,
-          q: keyword,
+          maxResults: 100,
+          q: `재테크 ${keyword}`,
         },
       })
       .then((res) =>
@@ -48,14 +59,6 @@ export default class Youtube {
   }
 
   async #mostPopular() {
-    return this.apiClient
-      .videos({
-        params: {
-          part: 'snippet',
-          maxResults: 25,
-          chart: 'mostPopular',
-        },
-      })
-      .then((res) => res.data.items);
+    return this.#searchByKeyword('재테크');
   }
 }
