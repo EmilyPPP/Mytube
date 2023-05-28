@@ -1,6 +1,9 @@
 # MYTUBE 🎞️
 
-나만의 영상 사이트 제작하기!
+직업은 갭알자 취미는 💰재테크💰 입니다만...
+
+`재테크`와 관련된 영상만 보여주는 사이트 입니다.
+
 
 ## 사용한 기술 🔧
 
@@ -93,21 +96,3 @@ api 호출 횟수 초과 방지를 위해 mock data를 만들어서 개발할 �
 ### 외부 api 사용
 
 [Youtube Api](https://developers.google.com/youtube?hl=ko)를 사용하여 외부 api를 프로젝트에 적용하는 방법을 배웠어요.
-
-**사용한 API**
-
-키워드 검색
-
-<https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=[YOUR_API_KEY]>
-
-핫트렌드 비디오들
-
-<https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=[YOUR_API_KEY]>
-
-연관된 비디오 검색
-
-<https://youtube.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId=Ks-_Mh1QhMc&type=video&maxResults=25&key=[YOUR_API_KEY]>
-
-채널 상세내용
-
-<https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=[YOUR_API_KEY]>
