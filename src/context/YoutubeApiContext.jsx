@@ -1,11 +1,10 @@
 import { createContext, useContext, useEffect } from 'react';
 import Youtube from '../apis/youtube';
 import YoutubeClient from '../apis/youtubeClient';
-import FakeYoutubeClient from '../apis/fakeYoutubeClient';
 
 export const YoutubeApiContext = createContext();
 
-const youtube = new Youtube(new FakeYoutubeClient());
+const youtube = new Youtube(new YoutubeClient());
 
 export function YoutubeApiProvider({ children }) {
   useEffect(() => {});

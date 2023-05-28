@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import Videos from './pages/Videos';
 import NotFound from './pages/NotFound';
-import Detail from './pages/Detail';
+import VideoDetail from './pages/VideoDetail';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/videos/watch/:id',
-        element: <Detail />,
+        element: <VideoDetail />,
       },
     ],
   },
