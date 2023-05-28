@@ -20,6 +20,10 @@ React Tailwind Javascript
 
 ## What I Learned
 
+### timeago 사용
+
+[timeago](https://www.npmjs.com/package/timeago.js/v/4.0.0-beta.3)를 사용하여 시간 표시를 변경할 수 있어요.
+
 ### axios 사용
 
 [axios](https://github.com/axios/axios)를 사용해서 네트워크 통신을 할 수 있어요.
