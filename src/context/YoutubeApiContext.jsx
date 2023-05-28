@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect } from 'react';
+import { createContext, useContext } from 'react';
 import Youtube from '../apis/youtube';
 import YoutubeClient from '../apis/youtubeClient';
 
@@ -7,8 +7,6 @@ export const YoutubeApiContext = createContext();
 const youtube = new Youtube(new YoutubeClient());
 
 export function YoutubeApiProvider({ children }) {
-  useEffect(() => {});
-
   return (
     <YoutubeApiContext.Provider value={{ youtube }}>
       {children}
