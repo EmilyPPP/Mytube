@@ -7,8 +7,11 @@
 완성된 페이지는 [여기](https://emily-mytube.netlify.app/)에서 확인할 수 있어요. 
 
 ## 사용한 기술 🔧
-
-React Tailwind Javascript
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>&#160;
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=flat&logo=React&logoColor=white"/>&#160;
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/>&#160;
+<img src="https://img.shields.io/badge/reactquery-FF4154?style=flat&logo=JavaScript&logoColor=white"/>&#160;
+<img src="https://img.shields.io/badge/reactrouter-CA4245?style=flat&logo=JavaScript&logoColor=white"/>&#160;
 
 ## 구현된 기능 ✨
 
